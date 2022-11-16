@@ -12,6 +12,8 @@ loginForm.addEventListener("submit", function (event) {
 
 const signupForm = document.getElementById("SignUp")
 
+// document.getElementById("submit").disabled = true;
+
 signupForm.addEventListener("submit", function (event) {
     event.preventDefault() // prevents the form from auto-submitting
 
@@ -20,12 +22,12 @@ signupForm.addEventListener("submit", function (event) {
 
     const email = document.getElementById("email").value
     console.log(email)
-
-    let pw1 = document.getElementById("password1").value
+    
+    const pw1 = document.getElementById("password1").value
 
     if (pw1.length < 8) {
         alert("Password must be at least 8 characters")
-        pw1 = ""
+        document.getElementById("submit").disabled = true;
     }
     else
         console.log(pw1)
