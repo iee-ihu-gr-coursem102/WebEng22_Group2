@@ -12,13 +12,15 @@
 <body>
     <div class="main">
         <div class="form-box">
+
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-button" onclick="login()">Login</button>
                 <button type="button" class="toggle-button" onclick="signup()">Sign Up</button>
             </div>
+
             <form id="Login" class="input-group">
-                <input type="text" class="input-field" placeholder="Username" required>
+                <input id = "login-username" type="text" class="input-field" placeholder="Username" required>
                 
                 <div class = "password-container">
                     <input id = "password" type = "password" placeholder = "Password" required>
@@ -28,23 +30,25 @@
                 <input type="checkbox" class="check-box"><span>Remember my password</span>
                 <button type="submit" class="submit-btn">Login</button>
             </form>
+
             <form id="SignUp" class="input-group">
-                <input type="text" class="input-field" placeholder="Username" required>
+                <input id = "signup-username" type="text" class="input-field" placeholder="Username" required>
                 <input id = "email" type="email" class="input-field" placeholder="Email" required>
 
                 <div class = "password-container">
-                    <input id = "password" type = "password" placeholder = "Password" required>
+                    <input id = "password1" type = "password" placeholder = "Password" required>
                     <i class = "fa-solid fa-eye" id = "show-password"></i>
                 </div>
 
                 <div class = "password-container">
-                    <input id = "confirm-password" type="password" placeholder = "Confirm password" required>
+                    <input id = "password2" type="password" placeholder = "Confirm password" required>
                     <i class="fa-solid fa-eye" id="show-password"></i>
                 </div>                
 
                 <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
                 <button type="submit" class="submit-btn">Sign Up</button>
             </form>
+
         </div>
     </div>
     <script src = "/login.js"></script>

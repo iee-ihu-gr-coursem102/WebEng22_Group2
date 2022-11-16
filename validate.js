@@ -1,18 +1,40 @@
-// Let's verify that the user added a valid email address
+const loginForm = document.getElementById("Login")
 
-const regexExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/gi;
-const str = document.getElementById("email");
+loginForm.addEventListener("submit", function (event) {
+    event.preventDefault() // prevents the form from auto-submitting
 
-if (regexExp.test(str) === True)
-    console.log("The email is valid");
-else
-    console.log("Please enter a valid email address");
+    const username = document.getElementById("login-username").value
+    console.log(username)
 
-/* Let's verify the user confirmed his/her password
+    const password = document.getElementById("password").value
+    console.log(password)
+})
 
-const passOne = document.getElementById("password");
-const passTwo = document.getElementById("confirm-password");
+const signupForm = document.getElementById("SignUp")
 
-if (passOne.value != passTwo.value)
-    alert("The passwords do not match!");
-*/
+signupForm.addEventListener("submit", function (event) {
+    event.preventDefault() // prevents the form from auto-submitting
+
+    const username = document.getElementById("signup-username").value
+    console.log(username)
+
+    const email = document.getElementById("email").value
+    console.log(email)
+
+    let pw1 = document.getElementById("password1").value
+
+    if (pw1.length < 8) {
+        alert("Password must be at least 8 characters")
+        pw1 = ""
+    }
+    else
+        console.log(pw1)
+
+    const pw2 = document.getElementById("password2").value
+    console.log(pw2)
+
+    if (pw1 != pw2) {
+        alert("Passwords do not match!");
+        return false;
+    }
+})
