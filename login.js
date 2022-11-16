@@ -1,8 +1,8 @@
 const loginElement = document.getElementById("Login");
 const signupElement = document.getElementById("SignUp");
 const btnElement = document.getElementById("btn");
-const passwordField = document.querySelector("#password")
-const eye = document.querySelector("#eye")
+const showPassword = document.getElementById("show-password");
+const passwordField = document.getElementById("password");
 
 function signup() {
     loginElement.style.left = "-400px";
@@ -16,8 +16,8 @@ function login() {
     btnElement.style.left = "0px";
 }
 
-eye.addEventListener("click", function(){
-    this.classList.toggle("fa-eye-slash")
-    const type = passwordField.getAttribute("type") === "password" ? "text" : "password"
-    passwordField.setAttribute("type", type)
+showPassword.addEventListener("click", function(){
+    this.classList.toggle("fa-eye-slash");
+    const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+    passwordField.setAttribute("type", type);
   })
