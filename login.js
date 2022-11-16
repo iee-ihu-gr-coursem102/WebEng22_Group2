@@ -4,6 +4,7 @@ const btnElement = document.getElementById("btn");
 const showPassword = document.getElementById("show-password");
 const passwordField = document.getElementById("password");
 
+
 function signup() {
     loginElement.style.left = "-400px";
     signupElement.style.left = "50px";

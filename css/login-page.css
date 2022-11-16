@@ -55,7 +55,7 @@
 }
 
 .input-group {
-  top: 140px;
+  top: 120px;
   position: absolute;
   width: 280px;
   transition: .5s;
@@ -113,6 +113,7 @@ span {
 .password-container{
   position: relative;
 }
+
 .password-container input[type="password"],
 .password-container input[type="text"]{
   width: 100%;
@@ -125,6 +126,7 @@ span {
   outline: none;
   background: transparent;
 }
+
 .fa-eye{
   position: absolute;
   top: 28%;
