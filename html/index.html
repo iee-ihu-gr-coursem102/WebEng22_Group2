@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/login-page.css">
+  <script src = "login.js"></script>
+</head>
+
+<body>
+    <div class = "main">
+        <div class = "form-box">
+            <div class = "button-box">
+                <div id = "btn"></div>
+                <button type = "button" class = "toggle-button" onclick = "login()">Login</button>
+                <button type = "button" class = "toggle-button" onclick = "signup()">Sign Up</button>
+            </div>
+            <form id = "Login" class = "input-group">
+                <input type = "text" class = "input-field" placeholder = "Username" required>
+                <input type = "password" class = "input-field" placeholder = "Password" required>
+                <i class = "fa-solid fa-eye" id = "show-password"></i>
+                <input type = "checkbox" class = "check-box"><span>Remember my password</span>
+                <button type = "submit" class = "submit-btn">Login</button>
+            </form>
+            <form id = "SignUp" class = "input-group">
+                <input type = "text" class = "input-field" placeholder = "Username" required>
+                <input type = "email" class = "input-field" placeholder = "Email" required>
+                <input type = "password" class = "input-field" placeholder = "Password" required>
+                <input type = "checkbox" class = "check-box"><span>I agree to the terms & conditions</span>
+                <button type = "submit" class = "submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
