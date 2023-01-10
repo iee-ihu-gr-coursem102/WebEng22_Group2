@@ -15,12 +15,12 @@
 
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-button" onclick="login()">Login</button>
-                <button type="button" class="toggle-button" onclick="signup()">Sign Up</button>
+                <button type="button" class="toggle-button" href='index.php?module=welcome' onclick="login()">Login</button>
+                <button type="button" class="toggle-button" href='index.php?module=success' onclick="signup()">Sign Up</button>
             </div>
 
-            <form id="Login" class="input-group" action = "/" method = "GET">
-                <input id = "login-username" type="text" class="input-field" placeholder="Username" required>
+            <form id="Login" autocomplete = "off" class="input-group" action = "/" method = "GET">
+                <input id = "login-username" type="text" class="input-field" maxlength = "16" placeholder="Username" required>
                 
                 <div class = "password-container">
                     <input id = "password" type = "password" placeholder = "Password" required>
@@ -31,8 +31,8 @@
                 <button id = "login" type = "submit" class = "submit-btn">Login</button>
             </form>
 
-            <form id="SignUp" class="input-group">
-                <input id = "signup-username" type="text" class="input-field" placeholder="Username" required>
+            <form id="SignUp" autocomplete = "off" class="input-group">
+                <input id = "signup-username" type="text" class="input-field" maxlength = "16" placeholder="Username" required>
                 <input id = "email" type="email" class="input-field" placeholder="Email" required>
 
                 <div class = "password-container">
