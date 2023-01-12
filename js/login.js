@@ -1,3 +1,5 @@
+"use strict"
+
 const loginElement = document.getElementById("Login");
 const signupElement = document.getElementById("SignUp");
 const btnElement = document.getElementById("btn");
@@ -37,3 +39,24 @@ showPassword.addEventListener("click", function () {
     const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
     passwordField.setAttribute("type", type);
 })
+
+function performLogin(){
+
+const username = document.getElementById("login-username").value;
+const password = document.getElementById("password").value;
+
+var xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://users.iee.ihu.gr//home/student/ait/2022/i.kazlaris/public_html/NameOfPHPhere.php/", false);
+xhttp.onload = function() {
+  if (this.status == 201){
+	alert("Καλως ήρθατε");
+    sessionStorage.setItem('connected','true');
+    sessionStorage.setItem('username', username);
+    location.reload();
+  }
+  else if (xhttp.readyState == 4 && xhttp.status == 401)
+    window.alert("Σφάλμα σύνδεσης");
+}
+//xhttp.withCredentials = true;
+xhttp.send('{"username" : "' + username + '", "password" : "' + password + '"}');
+} 
