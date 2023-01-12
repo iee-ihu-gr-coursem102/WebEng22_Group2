@@ -1,9 +1,23 @@
 const getBtn = document.getElementById('get-btn');
 const postBtn = document.getElementById('post-btn');
 
-const getData = () => {
+/* returns the universities */
+const getUniversities = () => {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://vaseis.iee.ihu.gr/api/index.php/v1.0/bases/department/1625?type=gel-ime-gen");
+    xhr.open("GET", "https://vaseis.iee.ihu.gr/api/index.php/universities");
+
+    xhr.onload = (response) => {
+        const data = JSON.parse(xhr.response);
+        console.log(data);
+    };
+
+    xhr.send();
+};
+
+/* returns the departments */
+const getDepartments = () => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://vaseis.iee.ihu.gr/api/index.php/departments");
 
     xhr.onload = (response) => {
         const data = JSON.parse(xhr.response);
@@ -15,5 +29,8 @@ const getData = () => {
 
 const sendData = () => {};
 
-getBtn.addEventListener('click', getData);
+/* Clicking on the GetData button calls all the above get functions */
+getBtn.addEventListener('click', getUniversities);
+getBtn.addEventListener('click', getDepartments);
+
 postBtn.addEventListener('click', sendData);
