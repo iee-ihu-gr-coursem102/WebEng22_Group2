@@ -74,4 +74,3 @@ async function find_id(filter){
 }
 
 fillTable('https://vaseis.iee.ihu.gr/api/index.php/v1.0/bases/department/1625?type=gel-ime-gen', document.querySelector("table"));
-//fillTable('https://api.spacexdata.com/latest/history', document.querySelector("table"));
