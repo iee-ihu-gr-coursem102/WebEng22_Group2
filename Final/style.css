@@ -1,0 +1,80 @@
+#history, #payloads{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.containers{
+    margin: 40px 15px;
+    height: 500px;
+    overflow-y: scroll;
+}
+.searchBar{
+    margin: 40px 15px;
+    display: flex;
+    justify-content: center;
+}
+/* .navbar{
+    width: 570%;
+} */
+#myInput{
+    width: 50%;
+    /* height: 10%; */
+}
+.table {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+     border-collapse: collapse; 
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.table thead th{
+    background-color: rgb(15, 97, 2);
+    color: white;
+    position: sticky;
+}
+
+.table td,
+.table th {
+    padding: 10px 20px;
+    text-align: center;
+}
+.table tbody tr:nth-of-type(odd){
+    font-weight: 400;
+}
+.table tbody tr:nth-of-type(even){
+    background: rgba(0, 130, 20, 0.1);
+    font-weight: 400;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(15, 97, 2);
+    font-weight: 400;
+}
+
+.table2 {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+     border-collapse: collapse; 
+    overflow: hidden;
+    font-weight: 700;
+  }
+  
+  .table2 thead th{
+    background-color: rgb(15, 97, 2);
+    color: white;
+  }
+  
+  .table2 td,
+  .table2 th {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .table2 tbody tr:nth-of-type(odd){
+    font-weight: 400;
+  }
+  .table2 tbody tr:nth-of-type(even){
+    background: rgba(0, 130, 20, 0.1);
+    font-weight: 400;
+  }
+  .table2 tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(15, 97, 2);
+    font-weight: 400;
+  }

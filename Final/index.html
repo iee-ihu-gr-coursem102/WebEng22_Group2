@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Σύστημα ανάκτησης στοιχείων - Βάσεις Πανεπιστημίων</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/ieeeihulogo.png" alt="IHU" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="login.html">Αρχική</a>
+                  <a class="nav-link " href="./information.html">Πληροφορίες</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Υποστήριξη</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <div class="flex-container">
+        <div class="item">
+            <h1>ΔΙΑΔΙΚΤΥΑΚΟΣ ΒΟΗΘΟΣ ΥΠΟΨΗΦΙΟΥ ΠΑΝΕΛΛΗΝΙΩΝ</h1>
+            <ol>
+                <li><i>Αναζητήστε Βάσεις Προηγούμενων ετών</i></li>
+                <li><i>Υπολογίστε τα μόρια σας για όλες τις κατευθύνσεις</i></li>
+                <li><i>Σχόλια φοιτητών για τις σχολές που πέρασαν</i></li>
+            </ol>
+        </div>
+
+    </div>
+    <nav class="navbar fixed-bottom navbar-dark bg-dark footer">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Copyright&copy;IHU</a>
+        </div>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<style>
+    .flex-container{
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-around;
+       align-items: center;
+    }
+    .item{
+        flex: 1;
+        align-self: center;
+    }
+    body{
+        background-image: url("img/peakpx.jpg");
+        background-size: cover;
+    }
+    h1 {
+        text-align: center;
+    }
+    ol{
+        text-align: center;
+        list-style-position: inside;
+    }
+    li{
+        line-height: 2.5;
+        font-weight: 600;
+    }
+    
+</style>
+</html>
